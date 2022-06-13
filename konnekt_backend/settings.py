@@ -129,7 +129,7 @@ STATIC_URL = 'static/'
 
 # using heroku postgres
 DATABASES = {}
-DATABASES["default"] = dj_database_url(conn_max_age=600)
+DATABASES["default"] = dj_database_url.config(conn_max_age=600)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 django_heroku.settings(locals())
