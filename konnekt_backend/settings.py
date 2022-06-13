@@ -138,6 +138,7 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
+# using heroku postgres
 DATABASES = {}
 DATABASES["default"] = dj_database_url(conn_max_age=600)
 
