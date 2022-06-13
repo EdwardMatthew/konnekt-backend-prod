@@ -139,7 +139,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 # using heroku postgres
-DATABASES = {}
 DATABASES["default"] = dj_database_url(conn_max_age=600)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
