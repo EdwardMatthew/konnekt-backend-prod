@@ -133,5 +133,6 @@ DATABASES["default"] = dj_database_url.config(conn_max_age=600)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 django_heroku.settings(locals())
+
 options = DATABASES["default"].get("OPTIONS", {})
 options.pop('sslmode', None)
