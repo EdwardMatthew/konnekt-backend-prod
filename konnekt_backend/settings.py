@@ -56,14 +56,19 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-CORS_ALLOW_METHODS = [
-    'DELETE',
-    'GET',
-    'OPTIONS',
-    'PATCH',
-    'POST',
-    'PUT'
+CORS_ALLOW_ORIGINS = [
+    "localhost:8000",
+    "konnekt-frontend.herokuapp.com",
 ]
+
+#CORS_ALLOW_METHODS = [
+#    'DELETE',
+#    'GET',
+#    'OPTIONS',
+#    'PATCH',
+#    'POST',
+#    'PUT'
+#]
 
 ROOT_URLCONF = 'konnekt_backend.urls'
 
